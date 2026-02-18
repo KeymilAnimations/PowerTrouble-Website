@@ -1,5 +1,159 @@
+@font-face {
+  font-family: 'AngryBirdsText';            /* name you’ll use in CSS */
+  src: url('fonts/AngryBirdsText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AngryBirdsText2';            /* name you’ll use in CSS */
+  src: url('fonts/angrybirds-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url(images/BackgroundMain.png);
+  background-repeat: no-repeat; /* don’t tile the image */
+  background-position: center;  /* center it */
+  background-size: cover;    /* scale it to cover the entire background */  
+  font-family: 'AngryBirdsText', sans-serif;
+  font-size: 20px;
+  user-select: none;       /* prevents text selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+header {
+  background-image: url(images/NavBar.png);
+  height: 95px;
+  background-repeat: horizontal;
+  background-size: contain;
+}
+h1 {
+  font-family: 'AngryBirdsText2', sans-serif;
+  font-size: 36px;
+}
+nav {
+  display: flex;
+  transform: translateY(-92px);
+  justify-content: right;   /* center the nav */
+  align-items: top;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  gap: 10px;               /* space between buttons */
+}
+nav a {
+  display: inline-block;
+  padding: 0;          /* remove extra space */
+  line-height: 0;       /* remove line height space */
+}
+nav a img {
+  width: 120px;               /* size of buttons */
+  height: 140px;
+  display: block; 
+  object-fit: contain;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+nav a img:hover {
+  transform: scale(1.1) translateY(5px);    /* slight zoom */
+}
+.logo {
+  height: 85px; /* Adjust the height as needed */
+}
 img {
-  display: block;
-  margin: auto;
-  width: 50%;
+  user-select: none;
+  -webkit-user-drag: none; /* Safari/Chrome */
+  -moz-user-select: none;  /* Firefox */
+  -ms-user-select: none;   /* IE/Edge */
+}
+main{
+  height: calc(100vh - 145px);  /* adjust for header height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-box {
+  background-color: rgba(255, 255, 255, 1); /* White background with some transparency */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Space inside the box */
+  max-width: 50%; /* Maximum width of the box */
+  min-height: 300px;
+  margin: 10px; /* Center the box horizontally with some vertical margin */
+  text-align: left; 
+  transform: translateY(-10px);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.info-box h1 {
+  text-align: center; 
+}
+.render_1 {
+  width: 40%;
+  display: flex;
+  justify-content: bottom;
+  align-items: bottom;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  opacity: 0.4;
+  color: white;
+  font-family: 'AngryBirdsText2', sans-serif;
+  gap: 20px;
+}
+.copyright {
+  padding-left: 20px;
+}
+.buttons_r {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  padding-right: 20px;
+}
+.buttons_r a {
+  padding: 6px;
+  color: white;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+.buttons_r a:hover {
+  transform: scale(1.1);
+}
+.DOWNLOAD_SELECT {
+  display: flex;
+  flex-direction: column; /* Stack title and button group vertically */
+  align-items: center;    /* Optional: center content horizontally */
+  gap: 10px;
+  transform: translateY(-30px);
+  text-align: center;
+}
+.GAME {
+  font-family: 'AngryBirdsText2', sans-serif;
+  font-size: 36px;
+  color:white;
+  text-shadow: 3px 3px black, -3px -3px black, 3px -3px black, -3px 3px black, 6px 6px rgb(139, 152, 168);
+  justify-self: top;
+}
+.DOWNLOAD_BUTTONS {
+  display: flex;
+  transform: translateX(25px) translateY(5px);
+  gap:20px;
+  justify-content: center;
+}
+.DOWNLOAD_BUTTONS img {
+    width: 300px;               /* size of buttons */
+    height: auto;
+    cursor: pointer;
+}
+iframe {
+  float: right;
+}
+.info-box img {
+  float: left;
 }

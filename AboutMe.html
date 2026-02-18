@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+	<head>
+		<meta charset="UTF-8">
+		<title>Power Trouble</title>
+		<link rel="Stylesheet" href="style.css">
+		<link rel="icon" href="icon.png">
+	</head>
+	<body>
+		<header>
+			<img src="images/Logo.png" alt="Power Trouble Logo" class="logo" draggable="false">
+			<nav>
+				<a href ="index.html"><img src="images/BTN_Home.png" alt="home" class="img-btn" data-hover="images/BTN_Home_Hover.png"></a>
+				<a href ="downloads.html"><img src="images/BTN_Downloads.png" alt="downloads" class="img-btn" data-hover="images/BTN_Downloads_Hover.png"></a>
+				<a href ="extras.html"><img src="images/BTN_Extras.png" alt="extras" class="img-btn" data-hover="images/BTN_Extras_Hover.png"></a>
+			</nav>
+		</header>
+		<main>
+			<div class="info-box">
+				<h1>About Me</h1>
+				<p>Hello it's me NickDS and now I will ramble!!
+				</p>
+			</div>
+		</main>
+		<footer>
+			<div class = "copyright">
+			© 2026 NickDS
+			</div>
+			<div class = "buttons_r">
+				<a href="FAQ.html">FaQ</a>
+				<a href="AboutMe.html">About Me</a>
+				<a href="https://www.youtube.com/@Nick_DoesStuff">Youtube</a>
+				<a href="https://x.com/PlqKeymil">Twitter</a>
+			</div>
+		</footer>
+		<script>
+  // Select all buttons with the class 'img-btn'
+  const buttons = document.querySelectorAll('.img-btn');
+
+  buttons.forEach(btn => {
+    const originalSrc = btn.src; // store original image
+    const hoverSrc = btn.dataset.hover; // get hover image from data attribute
+
+    // Mouse enters image
+    btn.addEventListener('mouseover', () => {
+      btn.src = hoverSrc;
+    });
+
+    // Mouse leaves image
+    btn.addEventListener('mouseout', () => {
+      btn.src = originalSrc;
+    });
+  });
+</script>
+	</body>
+</html>
