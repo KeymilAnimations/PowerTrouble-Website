@@ -157,3 +157,10 @@ iframe {
 .info-box img {
   float: left;
 }
+.wrap {
+  width: 25%;
+  margin: 10px;
+  display: flex;
+  justify-content: top;
+  align-items: top;
+}
