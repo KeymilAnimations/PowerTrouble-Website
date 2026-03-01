@@ -1,0 +1,2 @@
+ABPT.love filter=lfs diff=lfs merge=lfs -text
+*.love filter=lfs diff=lfs merge=lfs -text
